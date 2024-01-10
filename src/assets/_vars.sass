@@ -1,0 +1,42 @@
+$theme-primary-color: #63ffe2
+$theme-bgr-primary: #1A2426
+$theme-bgr-secondary: #2d393b
+$shadow: $theme-primary-color 2px 2px
+$text-shadow: 3px 3px 0 $theme-bgr-secondary, 2px 2px 0 $theme-bgr-secondary, 4px 4px 0 $theme-bgr-secondary, 1px 1px 0 $theme-bgr-secondary
+$text-color: #aabebe
+$text-color-bgr: #869696
+$text-color-highlight: #B2C9D8
+
+.bold
+  font-weight: bold
+
+.italic
+  font-style: italic
+
+.text-paragraph
+  color: $text-color
+  font-size: 18px
+
+.text-bgr
+  color: $text-color-bgr
+  font-size: 17px
+
+.text-header
+  color: $text-color-highlight
+  font-size: 35px
+  text-shadow: $text-shadow
+
+.text-header-secondary
+  color: $text-color-highlight
+  font-size: 25px
+  text-shadow: $text-shadow
+
+.clickable
+  box-shadow: $shadow
+  transition: 0.2s
+  padding: 7px
+
+  &:hover
+    cursor: pointer
+    background-color: $theme-bgr-secondary
+    color: $text-color-highlight
